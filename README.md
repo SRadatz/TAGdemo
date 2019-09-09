@@ -17,10 +17,11 @@ Windows - https://git-scm.com/download/win
 
 Mac - https://git-scm.com/download/mac
 
-(Linux)
-https://docs.docker.com/install/linux/docker-ce/ubuntu/
+Linux - https://docs.docker.com/install/linux/docker-ce/ubuntu/
 Follow prompts for required services install, GPG key, and adding new repository
+
 Git:
+
 >sudo dnf install git-all
 
 or
