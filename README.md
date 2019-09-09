@@ -7,9 +7,14 @@ Every so often there is a bright idea that evolves the way IT infrastructure ope
 ## Step 1: Installation Docker and Git
 
 (Windows & Mac)
-Download Docker Desktop from https://www.docker.com/products/docker-desktop
+Download Docker Desktop from
+
+https://www.docker.com/products/docker-desktop
+
 Git:
+
 Windows - https://git-scm.com/download/win
+
 Mac - https://git-scm.com/download/mac
 
 (Linux)
@@ -28,12 +33,12 @@ Open a terminal or administrative powershell prompt and enter the following comm
 If installed properly, the Docker engine details and versions should be provided.
 
 ## Step 3: Test out a few basic commands
-'''
-docker ps                   (Shows all running containers)
-docker ps -a                (Shows all containers)
-docker run hello-world      (Run command will pull and start a container image, like hello-world)
-docker stop <container id>  (Stops the specified running container)
-'''
+
+>docker ps                   (Shows all running containers)
+>docker ps -a                (Shows all containers)
+>docker run hello-world      (Run command will pull and start a container image, like hello-world)
+>docker stop <container id>  (Stops the specified running container)
+
 ## Step 4: Run web based application
 
 Before you use the run command for the compose file check out where I got this from, https://hub.docker.com/
