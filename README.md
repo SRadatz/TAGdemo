@@ -21,36 +21,47 @@ Mac - https://git-scm.com/download/mac
 https://docs.docker.com/install/linux/docker-ce/ubuntu/
 Follow prompts for required services install, GPG key, and adding new repository
 Git:
-'sudo dnf install git-all'
+>sudo dnf install git-all
+
 or
-'sudo apt install git-all'
+
+>sudo apt install git-all
 
 
 ## Step 2: Verify Docker install
 Open a terminal or administrative powershell prompt and enter the following command
-'docker version'
+
+>docker version
 
 If installed properly, the Docker engine details and versions should be provided.
 
 ## Step 3: Test out a few basic commands
 
 >docker ps                   (Shows all running containers)
+
 >docker ps -a                (Shows all containers)
+
 >docker run hello-world      (Run command will pull and start a container image, like hello-world)
+
 >docker stop <container id>  (Stops the specified running container)
 
 ## Step 4: Run web based application
 
 Before you use the run command for the compose file check out where I got this from, https://hub.docker.com/
 
-'docker run -d --name kanboard -p 80:80 -t kanboard/kanboard:v1.2.8'
+>docker run -d --name kanboard -p 80:80 -t kanboard/kanboard:v1.2.8
 
 ## Step 5: Run docker compose
 
 Execute git (Where ever you installed it eariler)
-run the command: git clone https://github.com/SRadatz/TAGdemo.git
+run the command:
 
-'docker-compose -f wordpress.yml up'
+>git clone https://github.com/SRadatz/TAGdemo.git
+
+Once the git package is cloned run the following command in powershell/terminal
+
+>docker-compose -f wordpress.yml up'
+
 once the application downloads and launches go to http://127.0.0.1:8080
 
 Afterwards you can run a "docker ps -a" and see the Wordpress container and SQL container. These containers will stay running until they are stopped or your computer is turned off.
