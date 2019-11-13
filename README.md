@@ -61,7 +61,7 @@ run the command:
 
 Once the git package is cloned run the following command in powershell/terminal
 
->docker-compose -f wordpress.yml up'
+>docker-compose -f wordpress.yml up
 
 once the application downloads and launches go to http://127.0.0.1:8080
 
